@@ -1,0 +1,12 @@
+{
+  "name": "property-maintenance-image-typescript",
+  "private": true,
+  "type": "module",
+  "dependencies": { "openai": "^4.104.0" },
+  "devDependencies": { "tsx": "^4.20.3", "typescript": "^5.8.3" },
+  "scripts": {
+    "start": "tsx src/property_image.ts",
+    "build": "tsc --noEmit --skipLibCheck --allowImportingTsExtensions --target ES2022 --module ESNext --moduleResolution Bundler --types node src/inspection_decision.ts src/property_image.ts test/inspection_decision.test.ts",
+    "test": "tsx test/inspection_decision.test.ts"
+  }
+}
